@@ -1,6 +1,6 @@
 # Architecture
 
-Interview Desk is a single-user local web app. The browser handles camera and microphone capture. Node serves the UI and coordinates saved sessions. A Python worker runs faster-whisper on the saved audio. An optional Codex CLI process produces feedback.
+Interview Desk is a single-user local web app. The browser handles camera and microphone capture. Node serves the UI and coordinates saved sessions. A Python worker runs faster-whisper on the saved audio.
 
 ```text
 Chrome → video and audio uploads → saved session → local Whisper
