@@ -1,0 +1,1135 @@
+{
+  "_note": "Behavioral-only pool for the general practice section. Not tied to any job description. Each question carries exactly one theme in tags.",
+  "themes": [
+    {
+      "id": "teamwork",
+      "label": "Teamwork"
+    },
+    {
+      "id": "conflict",
+      "label": "Conflict"
+    },
+    {
+      "id": "challenge",
+      "label": "Hard problems"
+    },
+    {
+      "id": "failure",
+      "label": "Failure"
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership"
+    },
+    {
+      "id": "ownership",
+      "label": "Ownership"
+    },
+    {
+      "id": "ambiguity",
+      "label": "Ambiguity"
+    },
+    {
+      "id": "communication",
+      "label": "Communication"
+    },
+    {
+      "id": "feedback",
+      "label": "Feedback"
+    },
+    {
+      "id": "pressure",
+      "label": "Pressure"
+    },
+    {
+      "id": "growth",
+      "label": "Growth"
+    },
+    {
+      "id": "judgment",
+      "label": "Judgment"
+    }
+  ],
+  "questions": [
+    {
+      "text": "Tell me about the best team you've ever worked on. What made it work?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Describe a time you had to work with someone whose style was the opposite of yours.",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Tell me about a time you covered for a teammate who was struggling.",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "When have you had to rely completely on someone else to deliver? How did you handle it?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Describe a time a handoff between you and another team went badly.",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Tell me about a time you joined a team mid-project. How did you get up to speed?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Tell me about a time you disagreed with a teammate. How did it resolve?",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Describe a time you disagreed with your manager's decision.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to say no to someone senior to you.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Describe a conflict you handled badly. What would you do differently?",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Tell me about a time two people on your team were stuck in a disagreement. What did you do?",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "When have you had to defend a decision that was unpopular with your team?",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Walk me through the hardest problem you've solved at work.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Tell me about a time you were completely stuck. How did you get unstuck?",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Describe a project everyone thought would fail. What happened?",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Tell me about the most technically demanding thing you've built.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "When have you had to learn something difficult very quickly?",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Describe a problem where your first three attempts didn't work.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Tell me about a project that failed. What did you actually learn?",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Describe your biggest professional mistake.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Tell me about a time you missed a deadline. What happened?",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "When have you had to admit you were wrong in front of other people?",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Describe a decision you made that you'd reverse today.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Tell me about a time you let someone down.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Describe a time you led without formal authority.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to get people aligned who didn't want to be.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "When have you had to make a call with the team split down the middle?",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Describe a time you mentored someone. What changed for them?",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to deliver bad news to your team.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "How have you handled someone on your team who wasn't performing?",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Tell me about a time you went beyond what was asked. Was it worth it?",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Describe something you fixed that nobody asked you to fix.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Tell me about a time you inherited a mess. What did you do first?",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "When have you pushed a project forward that had stalled?",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Describe a time you noticed a problem early that others missed.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Tell me about something you built that outlasted your time on the team.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Describe a situation where the requirements were completely unclear. What did you do first?",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Tell me about a time the goal changed halfway through.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "When have you had to make a decision without enough information?",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Describe the most chaotic environment you've worked in. How did you stay effective?",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Tell me about a time nobody owned the problem you were trying to solve.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "How did you handle a reorg or a change you disagreed with?",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to explain something technical to a non-technical audience.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Describe a time a miscommunication caused a real problem.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Tell me about a document or presentation that actually changed a decision.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "When have you had to persuade someone who started out opposed to you?",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Describe a time you had to give a status update nobody wanted to hear.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "How do you keep remote or distributed teammates genuinely in the loop?",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Tell me about the toughest feedback you've ever received.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Describe a time you gave someone feedback that was hard to give.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "How do you give critical feedback to someone more senior than you?",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Tell me about a time feedback changed how you work.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "When have you disagreed with feedback you were given?",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Describe how you handled a bad performance review.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Tell me about the most pressure you've been under at work.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Describe a time everything went wrong at once. What did you do first?",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to cut scope to ship.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "How do you decide what to drop when you can't do everything?",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Describe a time you were on call or handling an incident.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Tell me about a time you were burned out. How did you handle it?",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "What's the biggest gap in your skills right now, and what are you doing about it?",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Tell me about a skill you deliberately set out to build.",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "How do you learn something genuinely new? Walk me through the last time.",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Describe a time someone changed how you think about your work.",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "What's something you believed two years ago that you don't believe now?",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Tell me about a role or task you turned down. Why?",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to choose between speed and doing it right.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Describe a time you raised a concern nobody else was raising.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to push back on something you thought was a bad idea.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "When have you had to make a call that affected people outside your team?",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Describe a time the data and your instinct disagreed.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Tell me about a tradeoff you made that you still think about.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to work with someone you didn't trust.",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Describe a time your team was set up to fail. What did you do?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Tell me about the last time you asked for help. What made you ask?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "When has a team decision gone against you? How did you commit to it anyway?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Describe a time you and a teammate both wanted the same piece of work.",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Tell me about someone you onboarded. What did you do for them?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Describe working with a partner team in another time zone.",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "When have you had to rebuild trust with a teammate?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Tell me about something your team shipped together. What was actually your part?",
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "text": "Tell me about a time someone took credit for your work.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Describe a disagreement about priorities between two teams.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "When have you escalated something? How did you decide it was time?",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Tell me about a time you changed your mind in the middle of an argument.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Describe working with someone after a serious disagreement.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Tell me about a conflict where you turned out to be the one who was wrong.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "When have you had to tell someone their idea wouldn't work?",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Describe a time politics got in the way of doing the right thing.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Tell me about a code review or critique that turned tense.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "Tell me about a constraint that forced you to get creative.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Describe the most complex system you've had to understand from scratch.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "When have you solved something the people around you couldn't?",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Tell me about a time the obvious solution turned out to be wrong.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Describe debugging something that only happened intermittently.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "What's the longest you've ever spent on a single problem?",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "When have you had to throw work away and start over?",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Describe something you shipped that you didn't think you could.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Tell me about a time scale or volume broke your approach.",
+      "tags": [
+        "challenge"
+      ]
+    },
+    {
+      "text": "Tell me about a time you overpromised.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Describe a bug you shipped that reached real users.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "When have you failed to persuade someone, and it mattered?",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Tell me about something you gave up on. Was that the right call?",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Describe a time your assumptions turned out to be completely wrong.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Tell me about a project or bet that didn't work out.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "When did you realize too late that you should have asked for help?",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Describe a mistake you made more than once.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Tell me about feedback you ignored and shouldn't have.",
+      "tags": [
+        "failure"
+      ]
+    },
+    {
+      "text": "Tell me about setting direction without full buy-in.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Describe how you've handled someone who had checked out.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "When have you had to advocate for your team to people above you?",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Tell me about delegating something you really wanted to do yourself.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Describe a time you changed how your team worked.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Tell me about someone you helped grow into a bigger role.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "When have you had to make an unpopular call about who works on what?",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Describe running a project with people who didn't report to you.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Tell me about a time you stepped back and let someone else lead.",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "text": "Tell me about a time you owned the outcome, not just your task.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Describe something you took from idea to shipped, end to end.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "When have you taken responsibility for someone else's mistake?",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Tell me about following up on something long after it stopped being yours.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Describe a time you said you'd handle it and then regretted it.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Tell me about a process you created that other people adopted.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "When have you pushed for quality nobody was asking for?",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Describe how you've handled work nobody wanted to do.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Tell me about being the only person who seemed to care about a problem.",
+      "tags": [
+        "ownership"
+      ]
+    },
+    {
+      "text": "Tell me about a time you had to define the problem before you could solve it.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Describe a project with no clear definition of success.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "When have you had to start something from a blank page?",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Tell me about a time priorities changed week to week.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Describe having two managers or two sets of direction at once.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "When have you had to build something with no spec?",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Tell me about deciding whether a problem was even worth solving.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Describe joining a team with no documentation at all.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Tell me about a customer who couldn't tell you what they wanted.",
+      "tags": [
+        "ambiguity"
+      ]
+    },
+    {
+      "text": "Tell me about saying something uncomfortable in a meeting.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Describe handling a stakeholder who kept changing their mind.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "When have you had to tell someone about a delay?",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Tell me about a time writing something down settled a disagreement.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Describe a presentation that went badly.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "When have you translated between two groups talking past each other?",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Tell me about having to repeat yourself before anyone listened.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Describe how you communicate when you're blocked.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Tell me about summarizing something complicated under time pressure.",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "text": "Tell me about asking for feedback and not liking the answer.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Describe acting on a pattern in feedback rather than one comment.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "When has giving feedback damaged a relationship?",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Tell me about coaching someone through a mistake.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Describe telling someone their work wasn't good enough.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "When have you gotten conflicting feedback from two people?",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Tell me about praise you gave that actually mattered.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "What feedback are you most tired of hearing?",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Describe giving feedback to a whole team rather than one person.",
+      "tags": [
+        "feedback"
+      ]
+    },
+    {
+      "text": "Tell me about working to a deadline that could not move.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Describe saying no to something in order to protect a timeline.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "When have you had to keep other people calm?",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Tell me about having too many priorities at the same time.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Describe the worst week you've had at work.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "When have you had to deliver with someone missing from the team?",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Tell me about a fast decision with real consequences.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Describe how you handle the night before a launch.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Tell me about a time pressure made you make a bad call.",
+      "tags": [
+        "pressure"
+      ]
+    },
+    {
+      "text": "Tell me about the best manager you've had. What did they actually do?",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Describe how your work has changed over the last two years.",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "When have you deliberately taken on something you were bad at?",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Tell me about a person or idea that changed how you work.",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Describe a time you outgrew a role.",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "What do you want to be genuinely good at in three years?",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Tell me about a habit you had to unlearn.",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Describe how you handled feeling stuck at the same level.",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "When did you last change your mind about how to do your job?",
+      "tags": [
+        "growth"
+      ]
+    },
+    {
+      "text": "Tell me about deciding with an incomplete picture.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Describe a decision you deliberately put off.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "When have you gone against the consensus in the room?",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Tell me about weighing something short-term against something long-term.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Describe a risk you decided not to take.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Tell me about choosing which problem not to solve.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "When have you made a call that affected a customer directly?",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Describe a time being right mattered less than being aligned.",
+      "tags": [
+        "judgment"
+      ]
+    },
+    {
+      "text": "Tell me about a rule or process you decided to break.",
+      "tags": [
+        "judgment"
+      ]
+    }
+  ]
+}

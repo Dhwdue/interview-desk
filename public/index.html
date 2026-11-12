@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interview Desk</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<header id="topbar">
+  <span class="brand"><i class="mark" aria-hidden="true"></i>Interview Desk</span>
+  <nav aria-label="App">
+    <button id="home-btn" class="quiet" hidden>Practice</button>
+    <button id="settings-btn" class="quiet">Settings</button>
+    <button id="quit-btn" class="quiet">Quit</button>
+  </nav>
+</header>
+<main>
+  <p id="app-error" role="alert" class="notice error" hidden></p>
+  <section id="stopped" hidden>
+    <h1>Interview Desk is closed</h1>
+    <p>Open the app again to resume practice.</p>
+  </section>
+
+  <section id="view-jobs" class="view">
+    <div class="titlebar">
+      <h1 tabindex="-1">Practice</h1>
+      <button id="new-job-btn" class="primary">New job</button>
+    </div>
+    <div class="notice row" id="first-run" hidden>
+      <span>Set up transcription before your first recording.</span>
+      <button class="ghost push" id="first-run-settings">Set up transcription</button>
+    </div>
+    <div class="board">
+      <div id="practice-slot"></div>
+      <section class="sheet listing"><h2>Jobs</h2><div id="job-list"></div></section>
+    </div>
+  </section>
+
+  <section id="view-settings" class="view narrow" hidden>
+    <div class="titlebar"><h1 tabindex="-1">Settings</h1></div>
+    <section class="sheet">
+      <h2>Transcription</h2>
+      <p id="setup-status" class="hint" role="status"></p>
+      <button id="install-transcription" class="ghost" hidden>Install transcription</button>
+    </section>
+    <section class="sheet">
+      <h2>Codex feedback</h2>
+      <p class="hint">Install the Codex CLI and run <code>codex login</code>. When enabled, feedback uses your transcript, job description, and notes. Audio and video stay on this computer.</p>
+      <label class="check"><input type="checkbox" id="codex-enabled"> Use Codex for feedback and case questions</label>
+      <p id="settings-status" class="hint" role="status" hidden></p>
+    </section>
+    <section class="sheet">
+      <h2>Data folder</h2>
+      <p id="data-folder" class="path"></p>
+    </section>
+  </section>
+
+  <section id="view-newjob" class="view narrow" hidden>
+    <div class="titlebar"><h1 tabindex="-1">New job</h1></div>
+    <form class="sheet" id="new-job-form">
+      <label>Role title<input id="nj-title" placeholder="Product Analyst" required></label>
+      <label>Company<input id="nj-company" placeholder="Alder Parcel"></label>
+      <label>Job description<textarea id="nj-jd" rows="5"></textarea></label>
+      <label>Must-ask questions <span class="hint">One per line</span>
+        <textarea id="nj-must" rows="3">Walk me through your background.
+Why this role?</textarea>
+      </label>
+      <div class="row"><button id="nj-save" class="primary">Create job</button><button type="button" id="nj-cancel" class="quiet">Cancel</button></div>
+    </form>
+  </section>
+
+  <section id="view-setup" class="view" hidden>
+    <div class="titlebar"><h1 id="setup-title" tabindex="-1"></h1></div>
+    <div class="setup-grid">
+      <section class="sheet">
+        <div class="row panel-title"><h2>Questions</h2><button id="s-reshuffle" class="quiet push">Reshuffle</button></div>
+        <div id="theme-row" hidden><h3>Themes</h3><div id="theme-chips" class="chips"></div></div>
+        <ol id="q-preview" class="q-preview"></ol>
+        <p class="hint" id="pool-hint" hidden></p>
+        <div class="row" id="casegen-row" hidden>
+          <button id="s-morecases" class="ghost small">Generate case questions</button>
+          <span id="casegen-note" class="hint" role="status"></span>
+        </div>
+      </section>
+
+      <div class="setup-sidebar">
+        <section class="sheet controls-row" aria-label="Session settings">
+          <label>Question count<select id="s-count">
+            <option>3</option><option>4</option><option selected>5</option><option>6</option><option>8</option><option>10</option>
+          </select></label>
+          <label>Prep time<select id="s-prep">
+            <option value="0">None</option><option value="5" selected>5 seconds</option><option value="10">10 seconds</option><option value="20">20 seconds</option>
+          </select></label>
+          <label>Answer limit<select id="s-limit">
+            <option value="0">None</option><option value="90">90 seconds</option><option value="120" selected>2 minutes</option><option value="180">3 minutes</option>
+          </select></label>
+          <label id="focus-wrap">Focus<select id="s-focus">
+            <option value="all">All questions</option><option value="case">Case questions</option><option value="behavioral">Behavioral only</option>
+          </select></label>
+          <label class="check"><input type="checkbox" id="s-test"> Test run</label>
+          <p class="hint" id="test-hint" hidden>Practice without saving a recording.</p>
+          <button id="s-start" class="primary">Check camera and mic</button>
+          <p id="start-note" class="hint" role="status" hidden></p>
+        </section>
+        <details class="sheet" id="jobedit-box">
+          <summary>Job details</summary>
+          <label>Role title<input id="e-title"></label>
+          <label>Company<input id="e-company"></label>
+          <label>Job description<textarea id="e-jd" rows="5"></textarea></label>
+          <div class="row"><button id="e-save" class="ghost">Save job details</button><span id="e-saved" class="hint" role="status"></span></div>
+        </details>
+        <details class="sheet" id="mustask-box">
+          <summary>Must-ask questions <span class="hint" id="mustask-count"></span></summary>
+          <label>One question per line<textarea id="s-mustask" rows="4"></textarea></label>
+          <div class="row"><button id="s-save-mustask" class="ghost">Save questions</button><span id="mustask-saved" class="hint" role="status"></span></div>
+        </details>
+      </div>
+    </div>
+    <section class="sheet history" id="hist-title" hidden><h2>Past sessions</h2><div id="hist-list" class="hist"></div></section>
+  </section>
+
+  <section id="view-check" class="view narrow" hidden>
+    <div class="titlebar"><h1 tabindex="-1">Camera and mic</h1></div>
+    <div class="stage"><video id="check-video" autoplay playsinline muted></video></div>
+    <div class="meter" aria-hidden="true"><div id="meter-fill"></div></div>
+    <p class="hint" id="check-hint" role="status">Speak to check your mic.</p>
+    <div class="row wrap devices">
+      <label>Camera <select id="dev-video"></select></label>
+      <label>Mic <select id="dev-audio"></select></label>
+    </div>
+    <div class="row">
+      <button id="check-back" class="quiet">Back to setup</button>
+      <button id="check-go" class="primary" disabled>Start interview</button>
+    </div>
+  </section>
+
+  <section id="view-session" class="view session" hidden>
+    <div class="qcard sheet">
+      <div><p id="q-pos" class="hint"></p><h1 id="q-text" tabindex="-1"></h1></div>
+      <div><div class="time-row"><span id="answer-time">0:00</span><span id="limit-label"></span></div><div class="limitbar"><div id="limit-fill"></div></div></div>
+    </div>
+    <div class="stage">
+      <video id="live-video" autoplay playsinline muted></video>
+      <div id="rec-pill" class="pill"><span id="rec-dot"></span> <span id="rec-time">0:00</span></div>
+      <div id="prep-overlay" class="overlay" hidden><span id="prep-num"></span><small>Recording starts at zero</small></div>
+    </div>
+    <div class="row session-controls">
+      <button id="btn-exit" class="quiet">Discard</button>
+      <button id="btn-repeat" class="ghost">Restart answer</button>
+      <button id="btn-skip" class="ghost">Skip</button>
+      <button id="btn-end" class="ghost push">End and save</button>
+      <button id="btn-next" class="primary">Next question</button>
+    </div>
+    <details class="key-help"><summary>Keyboard shortcuts</summary>
+      <p><kbd>Space</kbd> Next <kbd>S</kbd> Skip <kbd>R</kbd> Restart <kbd>E</kbd> End <kbd>Esc</kbd> Discard</p>
+    </details>
+  </section>
+
+  <section id="view-processing" class="view narrow" hidden>
+    <div class="titlebar"><h1 id="proc-title" tabindex="-1">Saving session</h1></div>
+    <p id="proc-msg" role="status"></p>
+    <div class="meter indeterminate" id="proc-meter"><div></div></div>
+    <div class="row">
+      <button id="proc-retry" class="primary" hidden>Retry save</button>
+      <button id="proc-discard" class="quiet" hidden>Discard</button>
+      <button id="proc-home" class="quiet" hidden>Back to practice</button>
+    </div>
+  </section>
+
+  <section id="view-review" class="view" hidden>
+    <div class="titlebar"><h1 id="rev-title" tabindex="-1">Session review</h1><button id="rev-back" class="ghost">Back to setup</button></div>
+    <div class="notice row" id="rev-transcribe" hidden>
+      <span class="hint" id="rev-transcribe-note"></span><button id="rev-retry" class="ghost push">Retry transcription</button>
+    </div>
+    <div class="review-grid">
+      <div>
+        <div class="stage" id="rev-stage"><video id="rev-video" controls playsinline></video></div>
+        <div id="rev-chapters" class="chapters"></div>
+        <section class="sheet" id="rev-answers-box"><h2>Answers</h2><div id="rev-answers"></div></section>
+      </div>
+      <div class="setup-sidebar">
+        <section class="sheet">
+          <h2>Feedback</h2>
+          <div id="rev-eval" class="evalbox"></div>
+          <div class="row"><button id="rev-reeval" class="ghost">Get feedback</button><span id="eval-note" class="hint" role="status"></span></div>
+        </section>
+        <details class="sheet">
+          <summary>Your notes</summary>
+          <textarea id="rev-notes" rows="3" aria-label="Your notes"></textarea>
+          <div class="row"><button id="rev-save-notes" class="ghost">Save notes</button><span id="notes-saved" class="hint" role="status"></span></div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
